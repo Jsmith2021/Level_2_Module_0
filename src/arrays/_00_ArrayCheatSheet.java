@@ -24,20 +24,34 @@ public class _00_ArrayCheatSheet {
 		//7. use a for loop to make every value of the integer array a random number
 	Random rand  = new Random();
 		for(int i=0; i<numbers.length; i++) {
-			System.out.println(i);
-			numbers[i]=rand.nextInt(0_1);
-		
+			//System.out.println(i);
+			numbers[i]=rand.nextInt(100);
+		}
 		//8. without printing the entire array, print only the smallest number in the array
-	if(i==0) {
-		System.out.println(i);
-	}
+			
 		
 		//9 print the entire array to see if step 8 was correct
 	
 		//10. print the largest number in the array.
-	if(i==1) {
-		System.out.println(i);
-	}
-	}
+		int low=Integer.MAX_VALUE;
+		int high=Integer.MIN_VALUE;
+		System.out.println(low);
+		System.out.println(high);
+
+	
+		for(int i=0; i<numbers.length; i++) {
+			//System.out.println(i);
+			//numbers[i]=rand.nextInt();
+			if(numbers[i]<low) {
+				low=numbers[i];
+				
+			}
+			if(numbers[i]>high) {
+				high=numbers[i];
+				
+			}
+		}
+		System.out.println(low);
+		System.out.println(high);
 	}
 }
