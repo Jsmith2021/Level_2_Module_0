@@ -28,32 +28,41 @@ for(int i=0; i<5; i++) {
 
 Random rand  = new Random();
 int num=rand.nextInt(50);
-for(int i=0; i<50; i++) {
+num=30;
+for(int j=0; j<100; j++) {
 	
+for(int i=0; i<Robots.length; i++) {
+	num++;
+	System.out.println(num);
 	Robots[i].move(num);
 	
 }
+
+Robots[j].move(num);
+
+}
+
 	//6. use a while loop to repeat step 5 until a robot has reached the top of the screen.
 
 	//7. declare that robot the winner and throw it a party!
-
+System.out.println("You are the winner!");
 
 
 	//8. try different races with different amounts of robots.
-Robot Robots2[]= {new Robot(),  new Robot()};
+//Robot Robots2[]= {new Robot(),  new Robot()};
 	//9. make the robots race around a circular track.
-for(int i=0; i<2; i++) {
-	System.out.println(Robots);
-	Robots2[i].setSpeed(10);
-	Robots2[i].turn(180);
-	Robots2[i].move(200);
-	Robots2[i].turn(180);
+//for(int i=0; i<2; i++) {
+	////.out.println(Robots);
+	//Robots2[i].setSpeed(10);
+	//Robots2[i].turn(180);
+	//Robots2[i].move(200);
+	//Robots2[i].turn(180);
 	
 }
-for(int i=0; i<361; i++) {
-System.out.println(Robots);
-Robots2[i].turn(1);
-Robots2[i].move(num);
-}
-}
+//for(int i=0; i<361; i++) {
+////.out.println(Robots);
+//Robots2[i].turn(1);
+//Robots2[i].move(num);
+//}
+//}
 }
